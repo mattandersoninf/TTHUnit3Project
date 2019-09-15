@@ -13,47 +13,53 @@
         <div class="wrapper">
             <header>
                 <div class="container">
-                    <h1 class="header-msg">The Code Review</h2>
+                    <h1 class="header-msg">The Code Review</label>
                 </div>
             </header>
             <main>
                 <div class="container">
-                    <section class="main-section">
-                        <h1 class="main-header">
-                            Contact Information
-                        </h1>
-                        <h2 class="input-header">
-
-                        </h2>
-                        <h2 class="input-header">
-
-                        </h2>
-                        <h2 class="input-header">
-
-                        </h2>
-                        <h2 class="input-header">
-
-                        </h2>
-                        <h2 class="input-header">
-
-                        </h2>
-                        <h2 class="input-header">
-
-                        </h2>
-                        <h2 class="input-header">
-
-                        </h2>
-                    </section>
-                    <section class='main-section'>
-                        <h1 class="main-header">
-
-                        </h1>
-                        <div class="newsletter-checkboxes">
-                            <p class="checkbox-p"></p>
-                            <p class="checkbox-p"></p>
-                            <p class="checkbox-p"></p>
-                        </div>
-                    </section>
+                    <h1 class="main-header">
+                        Contact Information
+                    </h1>
+                    <form type="text" action="index.html" method="post">
+                        <fieldset>
+                            <legend class="fieldset-legend">Contact Information</legend>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name">
+                            
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email">
+                        
+                        
+                            <label for="phone_number">Phone Number</label>
+                            <input type="text" id="phone_number">
+                         
+                            <label for="street_address">Street Address</label>
+                            <input type="text" id="street_address">
+                        
+                            <label for="city">City</label>
+                            <input type="text" id="city">
+                        
+                            <label for="state">State</label>
+                            <input type="" id="state">
+                        
+                            <label for="zip_code">Zip Code</label>
+                            <input type="text" id="zip_code">
+                        </fieldset>
+                        <fieldset>
+                            <legend class="fieldset-legend">Newsletter</legend>
+                            <label>Select the newsletters you would like to recieve</label>
+                            <input type="checkbox" id="html_news" value="html_news" name="user_newsletter_news"><label for="html_news">HTML News</label><br>
+                            <input type="checkbox" id="css_news" value="css_news" name="user_newsletter_news"><label for="css_news">CSS News</label><br>
+                            <input type="checkbox" id="javascript_news" value="javascript_news" name="user_newsletter_news"><label for="javascript_news">Javascript News</label><br>
+                            <label>Newsletter format</label>
+                            <input type="radio" id="html" value="html" name="user_newsletter_format" class=""><label for="html">HTML</label><br>
+                            <input type="radio" id="plain-text" value="plain-text" name="user_newsletter_format" class=""><label for="plain-text">Plain text</label><br>
+                            <label for="topics">Other topics you'd like to hear about</label>
+                            <textarea id="topics" name="user_topics"></textarea>
+                            <button type="submit">Sign Up</button>
+                        </fieldset>
+                    </form>
                 </div>
             </main>
             <footer>
