@@ -5,6 +5,8 @@
 body{
     font-family:'Livvic', sans-serif;
     text-align: center;
+    display:flex;
+    flex-direction:column;
 }
 
 .input-header{
@@ -13,6 +15,21 @@ body{
 
 .copyright{
     font-style: italic;
+}
+html, body, header, footer, h1{
+  margin: 0 auto;
+}
+
+h1{
+  padding: 10px 0px 10px 0px;
+}
+
+header{
+  background:#000080;
+  width: 100vw;
+  color:white;
+  margin: 0 auto;
+  flex:1;
 }
 
 form {
