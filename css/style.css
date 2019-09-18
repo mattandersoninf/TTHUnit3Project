@@ -20,14 +20,26 @@ html, body, header, footer, h1{
   margin: 0 auto;
 }
 
-h1{
+h1, .copyright{
   padding: 10px 0px 10px 0px;
 }
 
-legend{
+legend, .signup-msg > div{
   font-weight: bolder;
-  text-align:left;
-  padding-bottom: 15px;
+  font-size: 28px;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.signup-msg{
+  background: #f4f7f8;
+  margin: 0 auto;
+}
+
+legend{
+  text-align: left;
+  border-top:3px;
+  border-color: black;
 }
 
 form:first-child{
@@ -55,20 +67,13 @@ form {
   margin: auto;
   padding: 10px 20px;
   background: #f4f7f8;
-  border-radius: 8px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="telephone"],
-input[type="time"],
-input[type="url"],
-input[type="select"],
+fieldset{
+  border:0;
+}
+
+fieldset:first-of-type > input,
 textarea{
   line-height:50px;
   background: rgba(255,255,255,0.1);
@@ -91,7 +96,6 @@ input[type="checkbox"] > label, input[type="radio"] > label{
   float:left;
 }
 
-
 button {
     padding: 19px 39px 18px 39px;
     color: #FFF;
@@ -107,9 +111,9 @@ button {
     margin-bottom: 10px;
   }
 
-footer{
-  padding: 5px;
-  margin-bottom:10px;
+footer, .signup-msg{
+  padding: 15px;
+  margin:10px;
 }
 
 
