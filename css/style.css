@@ -16,7 +16,8 @@ body{
 .copyright{
     font-style: italic;
 }
-html, body, header, footer, h1{
+
+body, header, footer, form, h1{
   margin: 0 auto;
 }
 
@@ -37,20 +38,11 @@ legend{
   border-color: black;
 }
 
-form:first-child{
-  float: left;
-}
-
 input[id="name"]::placeholder, input[id="email"]::placeholder{
   content: "Required";
   text-align: right;
   font-style: italic;
   padding-right:10px;
-}
-
-.wrapper{
-  display: flex;
-  flex-direction: column;
 }
 
 header{
@@ -63,18 +55,16 @@ header{
   padding-bottom:10px;
 }
 
-main{
-  margin:auto;
-}
-
 form {
+  display: flex;
+  flex-direction: column;
   max-width: 384px;
-  margin: 0 auto;
-  padding: 10px 20px;
 }
 
 fieldset{
   border:0;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 fieldset:first-of-type > input,
@@ -124,8 +114,7 @@ button {
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
-    margin-left:auto;
-    margin-right:auto;
+    margin:auto;
   }
 
 footer, .signup-msg{
