@@ -87,10 +87,14 @@ fieldset{
   margin: 10px 2px;
 }
 
+fieldset:first-of-type{
+  display: flex;
+  flex-direction: column;
+}
+
 fieldset:first-of-type > input,
 select,
 textarea{
-  width: 100%;
   background: rgba(255,255,255,0.1);
   border: 3px solid  #707070;
   border-radius: .3em;
@@ -98,7 +102,19 @@ textarea{
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  float:left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea{
+  width:100%;
+}
+
+
+label[for="zip_code"], input[type="number"]{
+  width: 33%;
 }
 
 input[id="zip_code"]{
@@ -108,7 +124,7 @@ input[id="zip_code"]{
 fieldset:first-of-type > input,
 select{
   height:50px;
-  padding-left:10px;
+  padding:0px 10px;
 }
 
 
@@ -129,9 +145,10 @@ label{
 }
 
 fieldset:first-of-type > label{
-  line-height:50px;
   padding-top:2px;
   padding-bottom:2px;
+  padding-right:30px;
+  text-align: left;
 }
 
 fieldset:first-of-type > label, fieldset:nth-of-type(2) > input{
@@ -149,21 +166,21 @@ textarea{
 }
 
 button {
-    padding: 20px 0.3em 20px 0.3em;
-    color: white;
-    background-color: orange;
-    font-size: 18px;
-    text-align: center;
-    font-style: normal;
-    border-radius: 5px;
-    width: 90%;
-    border: 1px solid #f27900;
-    border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-    margin-bottom: 10px;
-    margin-left:auto;
-    margin-right:auto;
-  }
+  padding: 20px 0.3em 20px 0.3em;
+  color: white;
+  background-color: orange;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 90%;
+  border: 1px solid #f27900;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+  margin-left:auto;
+  margin-right:auto;
+}
 
 footer, .signup-msg{
   padding: 15px;
@@ -176,38 +193,30 @@ footer, .signup-msg{
     max-width:768px;
   }
 
-  fieldset:first-of-type > label, fieldset:first-of-type > input{
+  fieldset:first-of-type{
+    display: block;
+    flex-direction: row;
+  }
+
+  fieldset:first-of-type > label, fieldset:first-of-type > input, select{
     display: inline-block;
+    float: left;
   }
 
   fieldset:first-of-type > label{
     width:20%;
     text-align: left;
-    margin:8px 0px;
+    margin:15px 0;
   }
 
-  fieldset:first-of-type > input, select{
-    margin:10px 0px;
-    padding:0px 5px;
-    width: 75%;
-  }
-
-  /*
   input[type="text"],
   input[type="email"],
-  input[type="tel"]
+  input[type="tel"],
   select{
-    margin:10px 0px;
+    margin:5px 0px;
     padding:0px 5px;
     width: 75%;
   }
-
-  input[type="number"]{
-    margin:10px 0px;
-    padding:0px 5px;
-    width: 33%;
-  }
-  */
 
   fieldset:nth-of-type(2) > p{
     text-align:left;
