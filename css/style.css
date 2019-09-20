@@ -12,6 +12,12 @@ body{
     font-family:'Livvic', sans-serif;
     text-align: center;
     flex-direction:column;
+    min-width:240px;
+}
+
+main{
+  width: 95%;
+  margin: 0 auto;
 }
 
 .input-header{
@@ -112,13 +118,18 @@ textarea{
   width:100%;
 }
 
-
 label[for="zip_code"], input[type="number"]{
   width: 33%;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin:0;
+}
+
 input[id="zip_code"]{
-  width:33%;
+  width:93px;
 }
 
 fieldset:first-of-type > input,
