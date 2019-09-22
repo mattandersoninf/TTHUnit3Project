@@ -10,12 +10,15 @@
 
 body{
     font-family:'Livvic', sans-serif;
-    text-align: center;
     flex-direction:column;
     min-width:240px;
 }
 
-main{
+header, .signup-msg, footer{
+  text-align:center;
+}
+
+main, form{
   width: 95%;
   margin: 0 auto;
 }
@@ -28,7 +31,7 @@ main{
     font-style: italic;
 }
 
-body, header, footer, form, h1{
+body, header, footer, h1{
   margin: 0 auto;
 }
 
@@ -164,11 +167,20 @@ fieldset:first-of-type > label{
   width:140px;
 }
 
-fieldset:first-of-type > label, fieldset:nth-of-type(2) > input{
-  float:left;
+fieldset:nth-of-type(2) > div{
+  padding-top:16px;
 }
 
-input[type="checkbox"] ~ label, input[type="radio"] ~ label{
+label[for="topics"]{
+  color:white;
+}
+
+label[for="html_news"],
+label[for="css_news"],
+label[for="javascript_news"],
+label[for="html"],
+label[for="plain-text"],
+fieldset:nth-of-type(2) > input{
   float:left;
   margin-left:3px;
 }
@@ -185,7 +197,7 @@ button {
   text-align: center;
   font-style: normal;
   border-radius: 5px;
-  width: 75%;
+  width: 100%;
   border: 1px solid #f27900;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
@@ -225,8 +237,7 @@ footer, .signup-msg{
   input[id="tel"],
   input[id="street_address"],
   input[id="city"],
-  select,
-  textarea{
+  select{
     margin:5px 0px;
     padding:0px 5px;
     width: 75%;

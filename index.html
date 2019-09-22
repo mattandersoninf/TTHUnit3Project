@@ -137,7 +137,7 @@
                     <div class="border"></div>
                     <fieldset>
                         <legend class="fieldset-legend">Newsletter</legend>
-
+                        
                         <p>Select the newsletters you would like to recieve</p>
 
                         <input type="checkbox" id="html_news" value="html_news" name="user_newsletter_news">
@@ -156,8 +156,10 @@
                         <input type="radio" id="html" value="html" name="user_newsletter_format" class=""><label for="html">HTML</label><br>
                         <input type="radio" id="plain-text" value="plain-text" name="user_newsletter_format" class=""><label for="plain-text">Plain text</label><br>
                         
-                        <p>Other topics you'd like to hear about</p>
-                        <textarea id="topics" name="user_topics" rows="4"></textarea>
+                        <div>
+                            <label for="topics">Other topics you'd like to hear about</label>
+                            <textarea id="topics" name="user_topics" rows="4"></textarea>
+                        </div>
                         
                         <button type="submit">Sign Up</button>
 
